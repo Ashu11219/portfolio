@@ -206,6 +206,7 @@ section[id] {
     transform: scale(1);
     opacity: 0.6;
   }
+
   to {
     transform: scale(2.6);
     opacity: 0;
@@ -911,7 +912,7 @@ section[id] {
   color: var(--text-primary);
 }
 
-.quick-bits li + li::before {
+.quick-bits li+li::before {
   content: "·";
   margin-inline: 0.75rem;
   color: var(--text-muted);
@@ -1046,7 +1047,7 @@ section[id] {
   font-size: 0.9rem;
 }
 
-.certs-list li + li::before {
+.certs-list li+li::before {
   content: "·";
   margin-inline: 0.75rem;
   color: var(--text-muted);
@@ -1205,5 +1206,29 @@ section[id] {
   .js .reveal.is-visible {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Phone: real bulleted lists. Desktop keeps the inline "A · B · C" look. */
+@media (max-width: 767px) {
+
+  .quick-bits,
+  .certs-list {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .quick-bits li,
+  .certs-list li {
+    display: flex;
+  }
+
+  .quick-bits li::before,
+  .quick-bits li+li::before,
+  .certs-list li::before,
+  .certs-list li+li::before {
+    content: "•";
+    margin: 0 0.6rem 0 0;
+    color: var(--text-muted);
   }
 }
