@@ -1,9 +1,1 @@
-# Fully commented study copy of the site (local only)
-commented/
-
-# Build spec and Claude Code settings
-CLAUDE.md
-.claude/
-
-# Full-size source images (the site uses the optimised .webp versions)
-assets/originals/
+to-dos/

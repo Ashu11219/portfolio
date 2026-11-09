@@ -2,7 +2,7 @@
 
 Source for [ashishmishra.me](https://ashishmishra.me), my personal portfolio.
 
-I built it from scratch in plain HTML, CSS and JavaScript. No framework, no build step, no template. It's the first site I've designed and coded start to finish, and every line in it is something I can explain.
+I built it from scratch in plain HTML, CSS and JavaScript. No framework, no build step, no template.
 
 ## About me
 
